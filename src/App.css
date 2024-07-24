@@ -12,6 +12,18 @@
                0 0 10px rgba(13, 148, 136, 0.5);
 }
 
+.image-blend::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: linear-gradient(to top, theme('colors.gray.900'), transparent);
+    z-index: 20;
+    pointer-events: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -5,7 +5,7 @@ const Header = () => {
     const location = useLocation();
 
     const navItems = [
-        { path: "/about", label: "About Me" },
+        { path: "/", label: "About Me" },
         { path: "/portfolio", label: "Portfolio" },
         { path: "/contact", label: "Contact" },
         { path: "/resume", label: "Resume" },

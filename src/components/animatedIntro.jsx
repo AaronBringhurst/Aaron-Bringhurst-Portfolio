@@ -44,10 +44,10 @@ const AnimatedIntro = () => {
           showName ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-4xl font-bold mb-4">
-          Hello,
+        <h1 className="text-5xl font-bold mb-4">
+          Hello, I'm
           <br />
-          I'm <span className="text-orange">Aaron Bringhurst</span>
+          <span className="text-orange-500 font extrabold tracking-wider name-shadow-teal">Aaron Bringhurst</span>
         </h1>
       </div>
 
@@ -64,7 +64,7 @@ const AnimatedIntro = () => {
           showTitle ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h2 className="text-3xl mt-4">A full stack developer</h2>
+        <h2 className="text-5xl mt-4">A full stack developer</h2>
       </div>
     </div>
   );
