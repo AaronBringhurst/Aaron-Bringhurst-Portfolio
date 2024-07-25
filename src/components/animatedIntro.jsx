@@ -38,7 +38,7 @@ const AnimatedIntro = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-navy-blue text-white">
+    <div className="flex flex-col items-center justify-center text-left text-white">
       <div
         className={`transition-opacity duration-1000 ${
           showName ? "opacity-100" : "opacity-0"
@@ -47,7 +47,9 @@ const AnimatedIntro = () => {
         <h1 className="text-5xl font-bold mb-4">
           Hello, I'm
           <br />
-          <span className="text-orange-500 font extrabold tracking-wider name-shadow-teal">Aaron Bringhurst</span>
+          <span className="text-orange-500 font extrabold tracking-wider name-shadow-teal">
+            Aaron Bringhurst
+          </span>
         </h1>
       </div>
 
