@@ -11,7 +11,7 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-900">
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100">
         <Header />
         <main className="flex-grow w-full">
           <Routes>

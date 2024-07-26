@@ -12,21 +12,31 @@
                0 0 10px rgba(13, 148, 136, 0.5);
 }
 
-.image-blend {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 20%; /* Increased height for a more noticeable effect */
-    background: linear-gradient(
-        to top,
-        theme('colors.gray.900') 0%,
-        theme('colors.gray.900') 20%,
-        transparent 100%
-    );
-    pointer-events: none;
+.image-container {
+  position: relative;
+  overflow: hidden;
 }
 
+.avatar-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-blend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%; /* Increased for a more noticeable effect */
+  background: linear-gradient(
+    to top,
+    rgba(26, 32, 44, 1) 0%, /* Matches the 'from-gray-900' color */
+    rgba(45, 55, 72, 0.8) 50%, /* Matches the 'to-gray-800' color with some transparency */
+    transparent 100%
+  );
+  pointer-events: none;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
