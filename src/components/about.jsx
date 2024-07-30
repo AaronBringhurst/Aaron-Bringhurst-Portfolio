@@ -49,8 +49,8 @@ const About = () => {
               My journey in web development began with an intense bootcamp,
               followed by personal projects that showcased my ability to rapidly
               learn and apply new technologies. I approach coding challenges
-              with the same vigor that placed me in the top 1% of productivity
-              in my previous role, ensuring clean, efficient, and
+              with the same work-ethic that placed me in the top 1% of productivity
+              in my previous careers, ensuring clean, efficient, and
               well-documented code.
             </p>
             <p>
