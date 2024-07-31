@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 const SvgAnimation = () => {
   const [currentFrame, setCurrentFrame] = useState(0);
   const frames = [
-    "../assets/images/1.svg",
-    "../assets/images/2.svg",
-    "../assets/images/3.svg",
-    "../assets/images/4.svg",
-    "../assets/images/5.svg",
-    "../assets/images/6.svg",
-    "../assets/images/7.svg",
+    "/src/assets/images/1.svg",
+    "/src/assets/images/2.svg",
+    "/src/assets/images/3.svg",
+    "/src/assets/images/4.svg",
+    "/src/assets/images/5.svg",
+    "/src/assets/images/6.svg",
+    "/src/assets/images/7.svg",
   ];
 
   useEffect(() => {
