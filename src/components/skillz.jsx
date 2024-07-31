@@ -42,13 +42,18 @@ const Skillz = () => {
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    const imageContext = import.meta.glob("../assets/docs/images/artwork/*", {
-      eager: true,
-    });
-    const imageUrls = Object.values(imageContext).map(
-      (module) => module.default
-    );
-    setArtworks(imageUrls);
+    const loadImages = async () => {
+      const imageModules = import.meta.glob("../assets/docs/images/artwork/*");
+      const imageUrls = await Promise.all(
+        Object.values(imageModules).map(async (importImage) => {
+          const imported = await importImage();
+          return imported.default;
+        })
+      );
+      setArtworks(imageUrls);
+    };
+
+    loadImages();
   }, []);
 
   return (
