@@ -16,7 +16,6 @@ const AnimatedIntro = () => {
       setStartSvgAnimation(false);
       setKey((prevKey) => prevKey + 1);
 
-      // Start the animation sequence again
       setTimeout(() => {
         setShowName(true);
         setStartSvgAnimation(true);
@@ -25,13 +24,10 @@ const AnimatedIntro = () => {
       setTimeout(() => setShowTitle(true), 2100);
     };
 
-    // Initial animation
     resetAnimation();
 
-    // Add event listener for page visibility changes
     document.addEventListener("visibilitychange", resetAnimation);
 
-    // Cleanup
     return () => {
       document.removeEventListener("visibilitychange", resetAnimation);
     };
