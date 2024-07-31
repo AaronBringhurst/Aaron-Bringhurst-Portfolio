@@ -1,4 +1,10 @@
 import React from "react";
+import dystopitTrackImage from "../assets/images/projects/Dystopi-Track.png";
+import codeNestImage from "../assets/images/projects/codeNest.png";
+import webPackImage from "../assets/images/projects/WebPack.png";
+import blogImage from "../assets/images/projects/blog.png";
+import gameOfLoansImage from "../assets/images/projects/GameOfLoans.png";
+import tryToSellImage from "../assets/images/projects/trytosell.png";
 
 const Portfolio = () => {
   const projects = [
@@ -7,7 +13,7 @@ const Portfolio = () => {
       title: "Dystopi-Track",
       description:
         "DystopiTrack Systems is a command-line interface (CLI) application designed to manage employee data within corporate environment. The application offers a rich set of features allowing administrators to handle various aspects of employee, department, and role management efficiently, directly from the terminal.",
-      image: "/src/assets/images/projects/Dystopi-Track.png",
+      image: dystopitTrackImage,
       github: "https://github.com/AaronBringhurst/Dystopi-Track-software",
     },
     {
@@ -15,7 +21,7 @@ const Portfolio = () => {
       title: "Code Nest",
       description:
         "Code Nest is a dynamic web application designed to foster a community of developers and tech enthusiasts. It provides a platform for users to share, discuss, and collaborate on crypto-related topics. With features like user authentication, post creation, and commenting, Code Nest aims to be a hub for knowledge sharing in the tech world.",
-      image: "/src/assets/images/projects/codeNest.png",
+      image: codeNestImage,
       github: "https://github.com/AaronBringhurst/Code-Nest",
     },
     {
@@ -23,7 +29,7 @@ const Portfolio = () => {
       title: "WebPack-Text-O-Tron",
       description:
         "WebPack-Text-O-Tron is a progressive web application that functions as a text editor. It allows users to create and edit text content with JavaScript syntax highlighting. The app works both online and offline, providing a seamless experience for developers who need a reliable text editor.",
-      image: "/src/assets/images/projects/WebPack.png",
+      image: webPackImage,
       github: "https://github.com/AaronBringhurst/webPack-text-o-tron",
     },
     {
@@ -31,7 +37,7 @@ const Portfolio = () => {
       title: "Aarons Blog",
       description:
         "A place for sharing and reading tales from various trails around the globe. This project encompasses a simple, responsive blog site designed for users to share their travel stories and experiences.",
-      image: "/src/assets/images/projects/blog.png",
+      image: blogImage,
       github: "https://github.com/AaronBringhurst/a-rons-blog",
     },
     {
@@ -39,7 +45,7 @@ const Portfolio = () => {
       title: "Game of Loans",
       description:
         "A dynamic budgeting application designed to help you manage your finances with ease and insight. Tailored for both financial novices and savvy savers, BudgetMaster offers an intuitive and responsive interface to make budgeting a straightforward and engaging process.",
-      image: "/src/assets/images/projects/GameOfLoans.png",
+      image: gameOfLoansImage,
       github: "https://github.com/JToton/GameOfLoans",
     },
     {
@@ -47,7 +53,7 @@ const Portfolio = () => {
       title: "Trying to Sell",
       description:
         "The Trying to Sell project is a comprehensive website designed to facilitate the online selling of various products. This server-side application manages product inventories, categories, and tags through a RESTful API. It demonstrates the integration of Express.js with Sequelize ORM for database management using PostgreSQL.",
-      image: "/src/assets/images/projects/trytosell.png",
+      image: tryToSellImage,
       github: "https://github.com/Ownerman123/Trying-to-sell",
     },
   ];
