@@ -5,7 +5,7 @@ import signature from "../../src/assets/images/sig11.png";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100">
-      <div className="container mx-auto flex flex-col items-center">
+      <div className="container mx-auto flex flex-col items-center mb-6">
         <img src={signature} alt="Signature" className="h-14 my-4" />
         <p className="mb-2">
           &copy; 2024 Aaron Bringhurst. All rights reserved.
