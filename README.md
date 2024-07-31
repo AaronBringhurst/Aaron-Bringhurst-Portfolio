@@ -44,4 +44,4 @@ Contributions to this project are not currently accepted. This is a personal pro
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Questions
-If you have any questions about **YourPortfolioName**, you can reach me at [YourEmail@example.com]. You can find more of my work at [YourGitHubUsername](YourGitHubProfileURL).
+If you have any questions you can reach me at [bringhurst.aaron@gmail.com]. You can find more of my work at [Aaron Bringhurst](https://github.com/AaronBringhurst).
