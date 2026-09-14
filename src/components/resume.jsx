@@ -1,38 +1,30 @@
 import React from "react";
 import resume from "../assets/docs/resume.pdf";
-import Skillz from "./skillz";
 
-const Resume = () => {
+export default function Resume() {
   return (
-    <section className="max-w-6xl mx-auto p-8">
-      <h2 className="text-3xl font-bold mb-6 text-gray-200">My Skills & Resume</h2>
-      
-      <Skillz />
-
-      <div className="my-8 text-center">
-        <a 
-          href={resume} 
-          download="resume.pdf"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+    <section className="page-width resume-page">
+      <p className="eyebrow">Experience & background</p>
+      <h1>Résumé</h1>
+      <p>View my résumé or download a copy.</p>
+      <div className="hero-actions">
+        <a
+          className="button button-primary"
+          href={resume}
+          download="Aaron-Bringhurst-Resume.pdf"
         >
-          Download Full Resume (PDF)
+          Download résumé
+        </a>
+        <a
+          className="button button-secondary"
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open PDF ↗
         </a>
       </div>
-
-      <div className="bg-white shadow-lg rounded-lg p-6">
-        <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-          Resume Preview
-        </h3>
-        <iframe
-          src={resume}
-          title="Resume Preview"
-          width="100%"
-          height="1100px"
-          className="border-none rounded"
-        />
-      </div>
+      <iframe src={resume} title="Aaron Bringhurst résumé" />
     </section>
   );
-};
-
-export default Resume;
+}

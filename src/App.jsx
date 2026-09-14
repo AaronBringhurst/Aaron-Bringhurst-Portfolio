@@ -1,30 +1,83 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import About from "./components/about";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  useLocation,
+  Link,
+} from "react-router-dom";
+import Home, { ContactSection } from "./components/Home";
 import Portfolio from "./components/portfolio";
-import Contact from "./components/contact";
 import Resume from "./components/resume";
 import "./App.css";
 
-const App = () => {
-  return (
-    <Router>
-      <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100">
-        <Header />
-        <main className="flex-grow w-full">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
-};
+function RoutePosition() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+    else window.scrollTo(0, 0);
+  }, [pathname, hash]);
+  return null;
+}
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <RoutePosition />
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <header className="site-header page-width">
+        <Link className="wordmark" to="/">
+          Aaron Bringhurst
+        </Link>
+        <nav aria-label="Main navigation">
+          <Link to="/#work">Work</Link>
+          <Link to="/#about">About</Link>
+          <Link to="/resume">Résumé</Link>
+          <Link to="/#contact">Contact</Link>
+        </nav>
+      </header>
+      <main id="main-content" tabIndex={-1}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/portfolio"
+            element={
+              <div className="page-width legacy-page">
+                <p className="eyebrow">Earlier work</p>
+                <Portfolio />
+              </div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <div className="page-width standalone-contact">
+                <ContactSection />
+              </div>
+            }
+          />
+          <Route path="/resume" element={<Resume />} />
+          <Route
+            path="*"
+            element={
+              <section className="page-width missing-page">
+                <p className="eyebrow">404</p>
+                <h1>Page not found.</h1>
+                <Link className="button button-primary" to="/">
+                  Back to home
+                </Link>
+              </section>
+            }
+          />
+        </Routes>
+      </main>
+      <footer className="site-footer page-width">
+        <span>© {new Date().getFullYear()} Aaron Bringhurst</span>
+        <Link to="/portfolio">Earlier projects</Link>
+        <a href="#main-content">Back to top ↑</a>
+      </footer>
+    </BrowserRouter>
+  );
+}
