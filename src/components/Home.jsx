@@ -70,7 +70,7 @@ export function ContactSection() {
           <ArrowUpRight aria-hidden="true" />
         </a>
         <a
-          href="https://www.linkedin.com/in/aaron-bringhurst-a330bb323"
+          href="https://www.linkedin.com/in/aaron-bringhurst-01ba11333"
           target="_blank"
           rel="noopener noreferrer"
         >

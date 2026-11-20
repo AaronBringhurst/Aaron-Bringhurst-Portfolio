@@ -34,7 +34,7 @@ npm run build
 ## Contact
 
 - [GitHub](https://github.com/AaronBringhurst)
-- [LinkedIn](https://www.linkedin.com/in/aaron-bringhurst-a330bb323)
+- [LinkedIn](https://www.linkedin.com/in/aaron-bringhurst-01ba11333)
 - [Email](mailto:bringhurst.aaron@gmail.com)
 
 ## Status
