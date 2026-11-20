@@ -9,11 +9,10 @@ const projects = [
   {
     id: "trek-pets",
     name: "Trek Pets",
-    status: "In development",
-    description: "A walking companion with a virtual pet.",
-    note: "An ongoing mobile app project, preparing for beta testing.",
+    status: "Closed beta completed",
+    description: "An independently developed React Native walking app with virtual pets, refined through closed beta testing and user feedback.",
     detail:
-      "Trek Pets brings a virtual walking buddy, a pet collection, and activity tracking into one mobile experience. My current focus is preparing the app for beta testing.",
+      "Trek Pets brings a virtual walking buddy, a pet collection, and activity tracking into one mobile experience. Closed beta testing is complete, and tester feedback has informed improvements to the app.",
     images: [
       {
         src: pets,
