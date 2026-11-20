@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, ArrowRight, Mail, Github, FileText } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Mail, Github, Linkedin, FileText } from "lucide-react";
 import resume from "../assets/docs/resume.pdf";
 import pets from "../assets/images/projects/trek-pets.png";
 import activity from "../assets/images/projects/trek-activity.png";
@@ -67,6 +67,14 @@ export function ContactSection() {
           rel="noreferrer"
         >
           <Github aria-hidden="true" /> GitHub{" "}
+          <ArrowUpRight aria-hidden="true" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aaron-bringhurst-a330bb323"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin aria-hidden="true" /> LinkedIn{" "}
           <ArrowUpRight aria-hidden="true" />
         </a>
         <a href={resume} download="Aaron-Bringhurst-Resume.pdf">
